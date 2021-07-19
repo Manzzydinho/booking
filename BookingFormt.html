@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Booking Page</title>
+    <style>
+        input{
+            padding: 5pt;
+            width: 80%;
+            margin: 5px 20px;
+            border-radius: 10px;
+        }
+        h3{
+            color: slateblue;
+            margin: 15px;
+            font-size: 32px;
+        }
+        input:focus{
+            background-color: burlywood;
+            color: cornsilk;
+            outline: none;
+        }
+        /* span{
+            margin: auto;
+            padding: auto;
+            text-align: center;
+            overflow: hidden; */
+        
+        footer{
+            background-color: darkslategray;
+            
+        }
+        .submit{
+            background-color: slateblue;
+            width: 83%;
+            color: snow;
+            font-size: 24px;
+
+        }
+        .form-container{
+            padding-bottom: 7%;
+            width: 50%;
+        }
+        .instruction{
+            width: 50%;
+            height: 25%;
+            text-align: center;
+            padding-bottom: 7%;      
+        }       
+            @media screen and (max-width: 800px) {
+                .form-container .instruction{
+                    width: 100%;
+            }       
+        }
+        .details{
+            background-image: image('cleaning2.jpg');
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- first padding -->
+        <div style="padding:5px;margin: 40px auto; width: 70%; border-radius: 10px;">
+            <div>
+                <h5 style="width: 50%; float: left;">Pro Cleaning</h5>
+            </div>
+            <div>
+                <h5 style="width: 50%; float: left; text-align: center;">Phone: 1-800-222-3030</h5>
+            </div>
+        </div>
+ 
+        <!-- second padding -->
+
+        <div style=" margin: auto; width: 100%; height: 50%; border-radius: 10px;" class="details">
+            <div style="width: 50%; height: 25%; float: left;" class="instruction">
+                
+                <h3 style="text-align: center;" > Vacouver's Best Home Clearners</h3>
+                <p style="text-align: center;"><h4>Cleaning is vancouver's best cleaning service. For the <br> quality maid service vancouver relies on, book one of our <br> experienced, background-checked professionals to have your <br> home clean in no time.</h4></p>
+
+            </div>
+
+            <div style="width: 50%; float: right;" class="form-container"> 
+                <h3 style="text-align: center;">
+                    Request Info & Booking
+               </h3>
+               <p style="text-align: center;">Fill this form and we'll get contact you as soon as we can</p>
+                   <h3> <form action="" onsubmit="processForm()" name="SignUp" id="">
+                    <input type="text" name="fullName" id="fullName" placeholder="Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <input type="tel" name="telephone" id="telePhone" placeholder="Your Phone" required>                        
+                    <input type="submit" value="Request Info & Booking" width="85%;" class="submit">
+                
+                
+                    </form> </h3> 
+                </div></div>
+        
+                    <!-- third division -->
+                <div style="padding: 10px; margin: 10px; width: 100%; border-radius: 10px;">
+                    <div style="width: 33%; float: left; padding-top: 11.5%;">
+                        <img src="head profile.jpg" alt="head image" width="100px" height="100px" style="border-radius: 50px; padding-left: 10pc;">
+                        <h4 style="text-align: center;">Trusted Professionals</h4>
+                        <h5 style="text-align: center;">Our professionals are experienced, friendly, and background-checked<h5>
+
+                    </div>
+
+                    <div style="width: 33%; float: right;">
+                        <img src="calender.png" alt="Availabilty" width="100px" height="100px" style="border-radius: 50px; padding-left: 10pc;">
+                        <h4 style="text-align: center;">Available Everyday</h4>
+                        <h5 style="text-align: center;">We're Available to serve you 7 days per week. We'll work around your schedule <h5>
+
+                    </div>
+                    <div style="width: 33%; float: right;">
+                        <img src="ds.jpg" alt="money" width="100px" height="100px" style="border-radius: 50px; padding-left: 10pc;" >
+                        <h4 style="text-align: center;">100% Money-Back Guarantee</h4>
+                        <h5 style="text-align: center;">If you're not satisfied. We'll refund all of your money. It's as Simple as that. <h5>
+
+
+
+                    </div>
+                    </div>
+                        <!-- fourth padding -->
+                    <div style=" margin: 10px; width: 100pt; border-radius: 10px; height: auto;">
+                        <div style="width: 100pt;">
+                            <h4 style="text-align: center;"><p>What Our Clients Say</p></h4>
+                        </div>
+                    </div>
+
+                        <div  style=" margin: 10px; width: 100%; border-radius: 10px; height: auto;">
+                        <div style="width: 50%; float: left; margin-top: 10%;">
+                            <img src="paula.jpg" alt="paula" width="100px" height="100px" style="border-radius: 50px; padding-left: 17pc;" >
+                            <h6 style="text-align: center;"><i>Paula Parra</i></h6>
+                            <h5 style="text-align: center;">The Team was Fast and Friendly - Honestly my house hasn't been this clean in years<h5>
+                        </div>
+                        <div style="width: 50%; float: left; margin-top: 10%">
+                            <img src="ana.jpg" alt="ana" width="100px" height="100px" style="border-radius: 50px; padding-left: 17pc;" >
+                            <h6 style="text-align: center;"><i>Ana Caroline</i></h6>
+                            <h5 style="text-align: center;">It feels so great walking in to a fresh, clean apartment everyday. These guys make my place spotless<h5>
+
+                        </div>
+                    </div>
+                
+                </div>
+                </div>
+            </div>
+            
+
+                <div style="clear: both;"> </div>
+
+    </div>
+
+    
+    <script>
+        function processForm(){
+            fullName = document.getElementById('fullName').value
+            email = document.getElementById('email').value
+            telephone = document.getElementById('telePhone').value
+            
+
+            alert(fullName)
+            alert(email)
+            alert(telephone)
+           
+ 
+            }
+
+
+        
+        
+    </script>
+<footer>©Copyright. All Rights Reserved</footer>
+</body>
+</html>
